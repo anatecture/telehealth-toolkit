@@ -1,0 +1,267 @@
+<section class="usa-grid" [ngClass]="this.home ? 'nborderHome' : 'nborder'">
+  <div class="usa-width">
+    <nav>
+      <div class="usa-current" *ngIf="this.home">
+        <div class="borderbox">
+          <p class="pT">About the Telehealth Toolkit</p>
+        </div>
+        <p class='ptt'>
+          Copy describing why this site is important and how it could help any staff interested in learning more about Telehealth.
+        </p>
+      </div>
+      <div *ngIf="!this.home">
+        <ul class="usa-sidenav-list">
+          <a [ngClass]="this.location == '/home' ? 'usa-current': '' " [routerLink]="['/home']">
+            Toolkit Home
+          </a>
+          <li>
+            <a [ngClass]="this.location == '/getting-providers' ? 'usa-current': '' " [routerLink]="['/getting-providers']">
+              Getting Providers Started
+            </a>
+            <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/getting-providers'">
+              <li>
+                <a href="javascript:void(0);">
+                  Understanding Provider Needs
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  One on One Training
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Talent Management System
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Necessary Provider Training
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [ngClass]= "this.location == '/staff' || this.location == '/preceptor-champions' ? 'usa-current': '' "[routerLink]="['/staff']">
+              Telehealth Staff Training
+            </a>
+            <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/staff' || this.location == '/preceptor-champions'">
+              <li>
+                <a href="javascript:void(0);">
+                  Identifying Veteran Candidates
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Parameters for Telehealth Appointments
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Scheduling with TMP
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Empowering Staff
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Mentorship
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Troubleshooting
+                </a>
+              </li>
+              <li>
+                <a [ngClass]="this.location == '/preceptor-champions' ? 'usa-current': ''  " [routerLink]="['/preceptor-champions']">
+                  Preceptor/Champion Programs
+                </a>
+                <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/preceptor-champions'">
+                  <li>
+                    <a href="javascript:void(0);">
+                      Preceptor Program
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      Champion Program
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [ngClass]="this.location == '/programs' ? 'usa-current': '' " [routerLink]="['/programs']">
+              Telehealth Programs
+            </a>
+            <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/programs'">
+              <li>
+                <a href="javascript:void(0);">
+                  VVC
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  CVT
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Home Telehealth
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Store and Forward
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Apps
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [ngClass]="this.location == '/experience-history' || this.location == '/experience' ? 'usa-current': '' " [routerLink]="['/experience']">
+              Telehealth Experience
+            </a>
+            <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/experience-history' || this.location == '/experience'">
+              <li>
+                <a href="javascript:void(0);">
+                  Veteran Stories
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Overcoming Challenges
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Tips for Appointments
+                </a>
+              </li>
+              <li>
+                <a [ngClass]="this.location == '/experience-history' ? 'usa-current': ''  " [routerLink]="['/experience-history']">
+                  History of Telehealth
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [ngClass]="this.location == '/best-practices' ? 'usa-current': '' " [routerLink]="['/best-practices']">
+              Best Practices
+            </a>
+            <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/best-practices'">
+              <li>
+                <a href="javascript:void(0);">
+                  Fargo
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Facility Education Plan
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [ngClass]="this.location == '/marketing' || this.location == '/digital-posters' ? 'usa-current': '' " [routerLink]="['/marketing']">
+              Marketing
+            </a>
+            <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/marketing' || this.location == '/digital-posters'">
+              <li>
+                <a href="javascript:void(0);">
+                  National Announcements
+                </a>
+              </li>
+              <li>
+                <a [ngClass]="this.location == '/digital-posters' ? 'usa-current': ''  " [routerLink]="['/digital-posters']">
+                  Digital Posters
+                </a>
+                <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/digital-posters'">
+                  <li>
+                    <a href="javascript:void(0);">
+                      Digital Posters #1
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      Digital Posters #2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      Digital Posters #3
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      Digital Posters #4
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Print Posters
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Brochures
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [ngClass]="this.location == '/resources' ? 'usa-current': '' " [routerLink]="['/resources']">
+              Resources
+            </a>
+            <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/resources'">
+              <li>
+                <a href="javascript:void(0);">
+                  Technical Support
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Forms and Templates
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <li>
+              <a [ngClass]="this.location == '/faq' ? 'usa-current': '' " [routerLink]="['/faq']">
+                Frequently Asked Questions (FAQ)
+              </a>
+              <ul class="usa-sidenav-sub_list" *ngIf="this.location == '/faq'">
+                <li>
+                  <a href="javascript:void(0);">
+                    General Questions
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    Statistical Benefits
+                  </a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>

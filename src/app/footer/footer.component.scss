@@ -1,0 +1,73 @@
+.footer{
+  height: 230px;
+  background-color: #122E51;
+  bottom: 0;
+  position: relative;
+  left: 0;
+  width: 100%;
+  padding-top: 2em;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .footer{
+    margin-top: 64px;
+  }
+}
+
+.toolkitText{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.vaText{
+  font-size: 18px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.headerInfo{
+  margin: 0 2em;
+}
+
+.headerInfo > a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo{
+  background-image: url('../../assets/va-seal.svg');
+  color: #ffffff;
+  height: 80px;
+  width: 85px;
+  margin-right: 30px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+
+.headerText{
+  font-size: 36px;
+  font-weight: lighter;
+  vertical-align: text-top;
+}
+
+.headerSubText{
+  text-align: left;
+  margin-left: 1em;
+}
+
+.returnToTop{
+  margin-left: 2em;
+  color: #9BDAF1;
+  text-decoration: underline;
+  cursor: pointer;
+  width: fit-content;
+}

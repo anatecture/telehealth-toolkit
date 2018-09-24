@@ -1,0 +1,103 @@
+.card-title {
+  font-family: "Merriweather-Bold";
+  font-size: 20px;
+  line-height: 26px;
+  display: inline;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.card-text {
+  font-family: "Source Sans Pro";
+  font-size: 17px;
+}
+
+.card {
+  height: 200px;
+  margin: 15px auto;
+  background-color: #205493;
+  color: #ffffff;
+  border-top: none;
+  border-left: none;
+  cursor: pointer;
+  border-right: none;
+
+  &:hover{
+    .card-title{
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .card.pull-right {
+    float: right;
+    margin-right: 30px;
+  }
+  .card.pull-left {
+    float: left;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-lg-5 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 662px) {
+  .card {
+    height: auto;
+  }
+}
+
+@media (min-width: 1222px) and (max-width: 1395px) {
+  .card {
+    height: 225px;
+  }
+  .sphere {
+    margin-top: 3.5em !important;
+  }
+}
+
+@media (min-width: 1199px) and (max-width: 1222px) {
+  .card {
+    height: 280px;
+  }
+}
+
+.sphere.pull-right {
+  float: right;
+}
+
+.cardContainer {
+  padding-bottom: 15px;
+}
+
+.cardImg {
+  float: left;
+  margin-right: 1em;
+  width: 100px;
+}
+
+.sphere {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-right: -3em;
+  background-color: white;
+  border: 1px solid rgba(33, 33, 33, 0.25);
+  margin-top: 3em;
+  > svg {
+    text-align: center;
+    margin-top: 10px;
+    /*display: inline;
+    margin-top: 0.6em;
+    background-image: url('../../assets/arrow_svg.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;*/
+  }
+}

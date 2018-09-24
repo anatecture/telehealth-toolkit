@@ -1,0 +1,28 @@
+<div class="col-12 govt-property"><i class="us-flag"></i>An official website of the United States Government</div>
+<div class="col-12 header" (scroll)="onScroll($event)" [style.backgroundImage]="'url('+backgroundImg+')'">
+  <div class="left headerInfo" (click)="goHome()">
+    <div class="logo left"></div>
+    <span class="headerText">Telehealth Toolkit</span>
+    <div class="headerSubText">U.S. Department of Veterans Affairs</div>
+  </div>
+  <!--<div class="right headerInfo">
+    <a href="javascript:void(0)" class="backLink">Back to Telehealth Site</a>
+    <button class="btn btn-primary contactBtn">Contact Us</button>
+  </div>-->
+  <br/>
+  <div class="welcomeContainer">
+    <h1 class="welcome">{{welcomeText}}</h1>
+    <div class="welcomeSubText" *ngIf="welcomeText !== ''">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor.</div>
+    <div class="searchContainer right-inner-addon col-3" *ngIf="welcomeText !== ''">
+      <div role="search" class="searchBox">
+        <form class="usa-search usa-search-small">
+          <label class="usa-sr-only" for="search-field-small">Search {{currentPath === '/home' ? 'Telehealth Toolkit' : welcomeText}}</label>
+          <input id="search-field-small stext" type="search" name="search" placeholder="Search {{currentPath === '/home' ? 'Telehealth Toolkit' : welcomeText}}">
+          <button type="submit">
+            <span class="usa-sr-only">Search</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

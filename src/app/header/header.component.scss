@@ -1,0 +1,190 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.headerInfo {
+  cursor: pointer;
+}
+
+.headerInfo > a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  background-image: url("../../assets/va-seal.svg");
+  color: #ffffff;
+  height: 80px;
+  width: 85px;
+  margin-right: 30px;
+}
+
+@mixin fluid-ratio($large-size, $small-size) {
+  $width-large: nth($large-size, 1);
+  $width-small: nth($small-size, 1);
+  $height-large: nth($large-size, 2);
+  $height-small: nth($small-size, 2);
+  $slope: ($height-large - $height-small) / ($width-large - $width-small);
+  $height: $height-small - $width-small * $slope;
+
+  padding-top: $slope * 100%;
+
+  background-size: cover;
+  -moz-background-size: cover; /* Firefox 3.6 */
+  background-position: center; /* Internet Explorer 7/8 */
+}
+
+.header {
+  color: #ffffff;
+  height: 352px;
+  background-repeat: no-repeat;
+  //background-size: 100% 115%;
+  @include fluid-ratio(800px 200px, 300px 150px);
+  padding: 22px 12px 0 12px;
+  text-align: center;
+  font-size: 14px;
+  /*&:before {
+    content: '';
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#122E51,#0071BC);
+    opacity: .15;
+  }*/
+}
+
+.headerText {
+  font-size: 36px;
+  font-weight: lighter;
+  vertical-align: text-top;
+}
+
+.headerSubText {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.contactBtn {
+  background: transparent;
+  border-color: #ffffff;
+}
+
+.backLink {
+  vertical-align: baseline;
+  margin-right: 2em;
+}
+
+hr {
+  opacity: 0.75;
+  margin-top: 6em;
+  border-color: #ffffff;
+}
+
+.welcome {
+  font-family: Merriweather-Bold;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: lighter;
+  margin-top: 3em;
+  margin-bottom: 8px;
+}
+
+.welcomeSubText {
+  font-family: "Source Sans Pro";
+  font-size: 17px;
+}
+
+.right-inner-addon {
+  position: relative;
+}
+
+.right-inner-addon input {
+  padding-right: 30px;
+}
+
+.right-inner-addon i {
+  position: absolute;
+  right: 0px;
+  padding: 10px 25px;
+  pointer-events: none;
+  color: #000000;
+}
+
+.searchContainer {
+  margin: 20px auto;
+}
+
+.usa-search.usa-search-small [type="search"],
+.usa-search.usa-search-small .usa-search-input {
+  width: 100%;
+}
+
+.searchBox {
+  margin: 15px auto;
+}
+
+.tabBar {
+  background-color: #f5f5f5;
+  height: 56px;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+}
+
+.tabLogo {
+  background-image: url("../../assets/va-seal.svg");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  margin-left: 7em;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.tabs {
+  height: 56px;
+}
+
+.tabs > span {
+  margin: 0 0 0 3em;
+  line-height: 4;
+  font-size: 14px;
+  color: rgba(42, 43, 46, 0.75);
+  cursor: pointer;
+}
+
+.tabs > span.activeTab {
+  padding-bottom: 15px;
+  border-bottom: 4px solid #055982;
+}
+
+.govt-property {
+  font-size: 12px;
+  color: #323a44;
+  background-color: #f1f1f1;
+}
+
+.us-flag {
+  background-image: url("../../assets/us-flag.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2em;
+  height: 2em;
+  margin-right: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.usa-search-small {
+  display: flex;
+}
+.stext {
+  font-family: "Source Sans Pro";
+  font-size: 17px;
+}

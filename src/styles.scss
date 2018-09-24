@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/bootstrap.min.css";
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  font-family: "Merriweather";
+}
+.links {
+  color: #212121;
+  font-family: "Merriweather-Bold";
+  font-size: 20px;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.link {
+  font-size: 17px;
+  color: #0071bc;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 26px;
+  margin-top: 1.6em;
+  font-family: "Source Sans Pro";
+
+  a:visited {
+    color: #0071bc !important;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: underline !important;
+  }
+}
+
+.container-fluid {
+  padding-top: 25px;
+}

@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row col-12">
+    <app-sidebar class="col-3"></app-sidebar>
+    <div class="col-7">
+      <app-card></app-card>
+    </div>
+    <div class="col-2">
+      <h3 class="links">
+        Most Requested Links
+      </h3>
+      <hr>
+      <div *ngFor="let link of links" class="link">
+        <a  title="{{link.text}}" >{{link.text}}</a>
+      </div>
+    </div>
+  </div>
+</div>
