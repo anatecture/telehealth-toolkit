@@ -26,6 +26,13 @@
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.6.9",
     "font-awesome": "^4.7.0",
+    "gatsby": "^2.9.6",
+    "gatsby-plugin-google-analytics": "^2.0.21",
+    "gatsby-plugin-netlify": "^2.0.17",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-typescript": "^2.0.15",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "rxjs": "^6.5.2",
     "uswds": "^1.6.12",
     "zone.js": "^0.8.29"
